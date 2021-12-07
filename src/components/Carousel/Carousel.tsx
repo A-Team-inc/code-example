@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Container } from 'components/container/Container';
-import { Slice } from 'components/slicer/Slicer';
-import s from './Carousel.scss';
-import { Button } from 'components/button/Button';
+import { Container } from '../Container';
+import { Slice } from '../Slicer';
+import { Image } from '../Image';
+import { Button } from '../Button';
 import { resolveLink, LinkInterface } from 'utils/linkResolver';
-import { Image } from 'components/image/Image';
 import { stripCompressionParams } from 'utils/stripCompression';
+
+import s from './Carousel.scss';
 
 
 export interface CarouselSlice extends Slice {
