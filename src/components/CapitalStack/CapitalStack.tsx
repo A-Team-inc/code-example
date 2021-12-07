@@ -1,5 +1,5 @@
 import { Options } from 'highcharts';
-import Chart from 'molecules/Chart';
+import Chart from '../Chart';
 import React from 'react';
 import { currencyFormat, currencyManager } from 'utils/currencyManipulation';
 import { ICapitalStack } from 'utils/globalTypes';

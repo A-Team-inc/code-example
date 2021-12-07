@@ -19,3 +19,11 @@ Utility functions for manipulations with URLs
 ## globalTypes.ts
 Shared Interface example
 
+## currencyManipulation.ts
+Manipulations with Currencies
+
+## math.ts
+Calculation utils
+
+## chartConfigBuilder.ts
+Utils for chart building
