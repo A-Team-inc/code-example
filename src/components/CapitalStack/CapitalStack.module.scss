@@ -1,0 +1,129 @@
+@import 'src/styles/global/variables';
+
+.CapitalStack {
+  border: $border-default;
+  border-radius: 4px;
+  padding: $spacing-l 0 0;
+  // Todo: Remove fixed width when the second column block will be implemented
+  width: 565px;
+
+  @media screen and (max-width: $max-mobile-w) {
+    width: auto;
+  }
+
+  &__row {
+    display: flex;
+    padding: 0 $spacing-l $spacing-l;
+
+    @media screen and (max-width: $max-mobile-w) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 33px;
+    width: 100%;
+
+    @media screen and (max-width: $max-mobile-w) {
+      padding: $spacing-l 0 0;
+    }
+  }
+
+  &__graph {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      background: url('/svg/priority.svg');
+      height: 168px;
+      width: 19px;
+    }
+
+    @media screen and (max-width: $max-mobile-w) {
+      // icon width + $spacing-l
+      margin: 0 0 0 -35px;
+    }
+  }
+
+  &__graphContent {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 0 0 $spacing-l;
+    transform: rotate(-90deg);
+  }
+
+  &__contentItem {
+    background-color: $alabaster;
+    padding: $spacing-xs $spacing-l;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    flex: 1 0 auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__titleWrapper {
+    font-family: $default-medium;
+    font-size: $fontSize-sm;
+    color: $sub-text;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    height: 16px;
+    width: 16px;
+    display: block;
+    border-radius: 3px;
+    margin-right: $spacing-xs;
+  }
+
+  &__amountContent {
+    font-family: $default-semiBold;
+    font-size: $default_fontSize;
+    color: $text-black;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__amount {
+    text-align: right;
+    color: $sub-text;
+  }
+
+  &__footer {
+    background-color: $alabaster;
+    text-align: right;
+    padding: $spacing-m $spacing-l;
+    border-top: $border-default;
+  }
+
+  &__footerContent {
+    font-family: $default-semiBold;
+    font-size: $fontSize-sm;
+    color: $text-black;
+
+    span {
+      color: $sub-text;
+
+      &:first-child {
+        margin-right: $spacing-xs;
+      }
+
+      &:last-child {
+        margin-left: $spacing-xxs;
+      }
+    }
+  }
+}

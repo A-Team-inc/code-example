@@ -13,7 +13,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "atoms": ["src/atomic/atoms/index"],
+      "molecules": ["src/atomic/molecules/index"],
+      "organisms": ["src/atomic/organisms/index"],
+      "templates": ["src/atomic/templates/index"],
+      "hocs": ["src/atomic/hocs/index"],
+      "utils/*": ["src/utils/*"],
+      "static/*": ["src/static/*"],
+      "stores/*": ["src/stores/*"],
+      "atoms/*": ["src/atomic/atoms/*"],
+      "molecules/*": ["src/atomic/molecules/*"],
+      "organisms/*": ["src/atomic/organisms/*"],
+      "templates/*": ["src/atomic/templates/*"]
+    }
   },
   "include": [
     "next-env.d.ts", "**/*.ts", "**/*.tsx"],

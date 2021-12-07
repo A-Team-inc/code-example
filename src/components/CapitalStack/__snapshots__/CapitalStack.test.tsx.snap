@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Capital Stack Component should match snapshots 1`] = `
+<div
+  className="CapitalStack"
+>
+  <div
+    className="CapitalStack__row"
+  >
+    <div
+      className="CapitalStack__graph"
+    >
+      <div
+        className="CapitalStack__graphContent"
+      >
+        <Chart
+          chartType="treemap"
+          config={
+            Object {
+              "chart": Object {
+                "height": 200,
+                "margin": 0,
+                "spacingBottom": 0,
+                "spacingTop": 0,
+              },
+              "lang": Object {
+                "noData": "No data available",
+              },
+              "noData": Object {
+                "position": Object {
+                  "align": "center",
+                  "verticalAlign": "middle",
+                },
+                "style": Object {
+                  "color": "#999999",
+                  "fontSize": "14px",
+                },
+              },
+              "title": Object {
+                "text": "",
+              },
+              "tooltip": Object {
+                "enabled": false,
+              },
+            }
+          }
+          dataValues={
+            Object {
+              "series": Array [
+                Object {
+                  "data": Array [
+                    Object {
+                      "color": "#43c3d3",
+                      "id": "Investor Equity",
+                    },
+                    Object {
+                      "color": "#8ac13f",
+                      "id": "Sponsor Co-Investment",
+                    },
+                    Object {
+                      "color": "#1ea0c0",
+                      "id": "Senior Debt",
+                    },
+                    Object {
+                      "parent": "Investor Equity",
+                      "value": 31.9,
+                    },
+                    Object {
+                      "parent": "Sponsor Co-Investment",
+                      "value": 3.5,
+                    },
+                    Object {
+                      "parent": "Senior Debt",
+                      "value": 53,
+                    },
+                  ],
+                  "levels": Array [
+                    Object {
+                      "dataLabels": Object {
+                        "align": "left",
+                        "enabled": true,
+                        "style": Object {
+                          "fontSize": "15px",
+                          "fontWeight": "bold",
+                        },
+                        "verticalAlign": "top",
+                      },
+                      "layoutAlgorithm": "sliceAndDice",
+                      "level": 1,
+                    },
+                  ],
+                  "type": "treemap",
+                },
+              ],
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="CapitalStack__content"
+    >
+      <div
+        className="CapitalStack__contentItem"
+        key="content-Investor Equity"
+      >
+        <div
+          className="CapitalStack__titleWrapper"
+        >
+          <span
+            className="CapitalStack__label"
+            style={
+              Object {
+                "backgroundColor": "#43c3d3",
+              }
+            }
+          />
+          Investor Equity
+        </div>
+        <div
+          className="CapitalStack__amountContent"
+        >
+          31.9%
+          <span
+            className="CapitalStack__amount"
+          >
+            $3,190
+          </span>
+        </div>
+      </div>
+      <div
+        className="CapitalStack__contentItem"
+        key="content-Sponsor Co-Investment"
+      >
+        <div
+          className="CapitalStack__titleWrapper"
+        >
+          <span
+            className="CapitalStack__label"
+            style={
+              Object {
+                "backgroundColor": "#8ac13f",
+              }
+            }
+          />
+          Sponsor Co-Investment
+        </div>
+        <div
+          className="CapitalStack__amountContent"
+        >
+          3.5%
+          <span
+            className="CapitalStack__amount"
+          >
+            $350
+          </span>
+        </div>
+      </div>
+      <div
+        className="CapitalStack__contentItem"
+        key="content-Senior Debt"
+      >
+        <div
+          className="CapitalStack__titleWrapper"
+        >
+          <span
+            className="CapitalStack__label"
+            style={
+              Object {
+                "backgroundColor": "#1ea0c0",
+              }
+            }
+          />
+          Senior Debt
+        </div>
+        <div
+          className="CapitalStack__amountContent"
+        >
+          53%
+          <span
+            className="CapitalStack__amount"
+          >
+            $5,300
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="CapitalStack__footer"
+  >
+    <div
+      className="CapitalStack__footerContent"
+    >
+      <span>
+        Total:
+      </span>
+      $10,000
+      <span>
+        (100%)
+      </span>
+    </div>
+  </div>
+</div>
+`;
