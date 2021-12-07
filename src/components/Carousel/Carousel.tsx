@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Container } from '../Container';
-import { Slice } from '../Slicer';
-import { Image } from '../Image';
-import { Button } from '../Button';
+import { Container } from '../Container/Container';
+import { Button } from '../Button/Button';
+import { Image } from '../Image/Image';
 import { resolveLink, LinkInterface } from 'utils/linkResolver';
 import { stripCompressionParams } from 'utils/stripCompression';
 
 import s from './Carousel.scss';
 
 
-export interface CarouselSlice extends Slice {
+export interface CarouselSlice {
   primary: {
     header: string;
   };

@@ -1,0 +1,75 @@
+@import '~styles/config';
+
+.button {
+  display: inline-flex;
+  position: relative;
+
+  padding: 0 40px;
+
+  height: 60px;
+
+  cursor: pointer;
+
+  font-size: $font-size;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  vertical-align: middle;
+  letter-spacing: -0.03em;
+
+  background-color: #fff;
+  color: $color-font;
+
+  transition: background-color 180ms ease;
+
+  &:hover {
+    background-color: darken(#fff, 25%);
+  }
+
+  &.primary {
+    background-color: $color-red;
+    color: $color-font;
+
+    &:hover {
+      background-color: lighten($color-red, 25%);
+    }
+  }
+
+  &.secondary {
+    background-color: $color-dark;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten($color-dark, 25%);
+    }
+  }
+
+  &.withArrow {
+    padding-left: 20px;
+    min-width: 220px;
+    padding-right: 50px;
+
+    & .arrow {
+      opacity: 0.8;
+      position: absolute;
+      right: 25px;
+      transition: transform 180ms ease;
+    }
+
+    &:hover .arrow {
+      animation: bounce 1s infinite;
+      opacity: 0.8;
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateX(0);
+      }
+      56% {
+        transform: translateX(4px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+}
